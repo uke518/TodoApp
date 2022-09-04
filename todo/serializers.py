@@ -10,4 +10,4 @@ class TodoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = TodoModel
-        fields = ('id', 'title', 'content', 'created_at', 'updated_at')
+        fields = ('uuid', 'title', 'content', 'created_at', 'updated_at')

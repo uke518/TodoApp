@@ -13,4 +13,7 @@ class TodoViewSet(viewsets.ModelViewSet):
     queryset = TodoModel.objects.all()
     serializer_class = TodoSerializer
 
-# class TodoDetail(viewsets.ModelViewSet):
+
+class TodoDetail(viewsets.ModelViewSet):
+    queryset = TodoModel.objects.all()
+    serializer_class = TodoSerializer
