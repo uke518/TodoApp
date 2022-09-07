@@ -5,8 +5,7 @@ from django.db import models
 
 
 class TodoModel(models.Model):
-    # idとユーザーも追加
-    uuid = models.UUIDField(
+    id = models.UUIDField(
         primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=100)
     content = models.TextField()
